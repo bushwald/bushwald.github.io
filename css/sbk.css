@@ -1,0 +1,17 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    min-width: 250px;
+}
+
+@media (max-width: 475px) {
+    h4 {
+        text-align: center;
+    }
+}
+
+.btn {
+    margin-top: 5%;
+}

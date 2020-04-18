@@ -18,125 +18,231 @@
 
 </head>
 <body>
-
-  <div class="container">
+  <a class="button language" id="lang-toggle" onClick="languageToggle();">
+    <span class="en-text">es 🇲🇽</span>
+    <span class="es-text">en 🇺🇸</span>
+  </a>
+  <header class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 10%">
-        <h4>South Brooklyn Community Mutual Aid</h4>
+      <div class="twelve columns" style="text-align: center; margin-top: 3%;">
+        <h4><strong>South Brooklyn Community Mutual Aid</strong></h4>
       </div>
     </div>
     <div class="row">
-      <div class="six columns">
-        <img id="help" src="help.png" alt="a person throwing a lifeline to people who are struggling to stay above water. caption: 'We the people must help each other!'">
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <a class="button u-full-width btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSev6-x2WLbeRPXKZ4bT-QXZ5vTcLBaGFGbZqxzygov1pcs0cQ/viewform">
-          click here to volunteer
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <a class="button u-full-width btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSe9w6XOcoscWJsLTWdh569CB2Obzc-6k-5ZoFkgzw88pLNC-A/viewform">
-          click here to request assistance
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <a class="button u-full-width btn" target="_blank" rel="noopener" href="https://venmo.com/southbkmutualaid">
-          donate
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p style="margin-top: 5%;">Mutual aid, as opposed to charity, does not connoate moral superiority of the giver over the receiver.  Mutual aid networks can provide goods and services directly in a decentralized manner. They are dependent on core principles of community, education, and human decency.                                                                                                
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <h5>how it works</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>We pair volunteers with neighbors who need help. Once you've submitted to our form, a neighborhood coordinator will contact you and figure out the entire scope of your request. They will then work to assign a nearby volunteer who can help you.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>Examples of tasks we can help with: buying and delivering groceries, picking up prescriptions, 1:1 conversation & companion (via Skype, Zoom, etc), translation, social services guidance (filing for medicare, unemployment), preparing cooked food, dog walking, and in certain cases childcare/petcare.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>Things we can't do but can help connect you to the right resource: provide medical advice, offer legal reprsentation/advocacy, mental health counseling, and anything else that might be deemed outside of the scope of what our volunteers can do legally/safely.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <h5>grocery shopping</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>If you request help with grocery shopping, your assigned volunteer will reach out to figure out a delivery time & your grocery list. After they are purchased, your volunteer will send you a picture of the receipt, and you can reimburse them via Venmo/PayPal (preferable) or cash.                                                                                                
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>Please note: Due to safety concerns, volunteers will head to the closest grocery store. Trader Joe's, Whole Foods, Target, and Park Slope Food Co-Op tend to have crowds, limited supplies, and long waiting lines and we will not be asking volunteers to go there.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <p>Need help covering groceries? Please note that in your request form. We will fulfill grocery requests as they come in. If we do not have funds to cover your needs immediately, we will let you know, and will also work to get you in-contact with other funds/service providers who can help.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="six columns">
-        <h5>general mutual aid resources</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <a  target="_blank" rel="noopener" href="https://itsgoingdown.org/what-can-we-do-a-mutual-aid-explainer/">mutual aid explainer</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <a  target="_blank" rel="noopener" href="https://docs.google.com/document/d/1rIdpKgXeBHbmM3KpB5NfjEBue8YN1MbXhQ7zTOLmSyo/edit?usp=sharing">mutual aid & preparation through a disability lens</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <a  target="_blank" rel="noopener" href="http://bigdoorbrigade.com/mutual-aid-toolbox/?fbclid=IwAR1D_mlK-3SEjLWn1KoJF65_bn-3o_Pa8UEhiLPeujnIbzoZ761x2oXkqew">mutual aid toolbox</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <a  target="_blank" rel="noopener" href="https://www.anarchistagency.com/commentary/five-ways-you-can-engage-in-mutual-aid-now/?fbclid=IwAR2KXOi5xJ3hpYPWfyEiXlTRQu7ofY0OcJJofBmQrvPxTDDQrfYKD_oKzz4">five ways to engage in mutual aid</a>
-      </div>
-    </div>
-    <div class="row" style="margin-top: 4%">
       <div class="twelve columns">
+        <img id="help" src="help.png" 
+          alt="a person throwing a lifeline to people who are struggling to stay above water. caption: 'We the people must help each other!'"/>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <a class="button btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSev6-x2WLbeRPXKZ4bT-QXZ5vTcLBaGFGbZqxzygov1pcs0cQ/viewform">
+          <span class="en-text">sign up to volunteer</span>
+          <span class="es-text">ssign up to volunteer</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <a class="button btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSe9w6XOcoscWJsLTWdh569CB2Obzc-6k-5ZoFkgzw88pLNC-A/viewform">
+          <span class="en-text">request assistance</span>
+          <span class="es-text">request assistance</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <a class="button btn" target="_blank" rel="noopener" href="https://venmo.com/southbkmutualaid">
+          <span class="en-text">donate</span>
+          <span class="es-text">donate</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="block-text-accent en-text" style="margin-top: 5%;">
+          Mutual aid, as opposed to charity, does not connote moral superiority of the giver over the receiver.  
+          Mutual aid networks can provide goods and services directly in a decentralized manner. They are dependent on core 
+          principles of community, education, and human decency.
+        </p>
+        <p class="block-text-accent es-text" style="margin-top: 5%;">
+          Mutual aid, as opposed to charity, does not connoate moral superiority of the giver over the receiver.  
+          Mutual aid networks can provide goods and services directly in a decentralized manner. They are dependent on core 
+          principles of community, education, and human decency.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <h4>
+          <strong class="en-text">how it works</strong>
+          <strong class="es-text">how it works</strong>
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          Volunteers are paired with neighbors who need help. 
+          Once you've submitted to a request, a neighborhood coordinator will contact you and figure out the entire scope of your request. 
+          They will then work to assign a nearby volunteer who can help you.
+        </p>
+        <p class="es-text">
+          Volunteers are paired with neighbors who need help. 
+          Once you've submitted to a request, a neighborhood coordinator will contact you and figure out the entire scope of your request. 
+          They will then work to assign a nearby volunteer who can help you.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          Examples of tasks we can connect neighbors to help with: buying and delivering groceries, picking up prescriptions, 
+          1:1 conversation & companionship (via Skype, Zoom, etc), translation, social services guidance (filing for medicare, unemployment), 
+          preparing cooked food, dog walking, and in certain cases childcare/petcare.
+        </p>
+        <p class="es-text">
+          Examples of tasks we can connect neighbors to help with: buying and delivering groceries, picking up prescriptions, 
+          1:1 conversation & companionship (via Skype, Zoom, etc), translation, social services guidance (filing for medicare, unemployment), 
+          preparing cooked food, dog walking, and in certain cases childcare/petcare.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          Things we can't do but can help connect you to the right resource: 
+          provide medical advice, offer legal representation/advocacy, mental health counseling, and anything else that 
+          might be deemed outside of the scope of what our volunteers can do legally/safely.
+        </p>
+        <p class="es-text">
+          Things we can't do but can help connect you to the right resource: 
+          provide medical advice, offer legal representation/advocacy, mental health counseling, and anything else that 
+          might be deemed outside of the scope of what our volunteers can do legally/safely.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <h4>
+          <strong class="en-text">grocery shopping</strong>
+          <strong class="es-text">grocery shopping</strong>
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          If you request help with grocery shopping, a volunteer will reach out to figure 
+          out a delivery time & your grocery list.                                                                                               
+        </p>
+        <p class="es-text">
+          If you request help with grocery shopping, a volunteer will reach out to figure 
+          out a delivery time & your grocery list.                                                                                               
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          Please note: Due to safety concerns, volunteers will head to the closest grocery store. 
+          Trader Joe's, Whole Foods, Target, and Park Slope Food Co-Op tend to have crowds, limited supplies, 
+          and long waiting lines and we will not be asking volunteers to go there.
+        </p>
+        <p class="es-text">
+          Please note: Due to safety concerns, volunteers will head to the closest grocery store. 
+          Trader Joe's, Whole Foods, Target, and Park Slope Food Co-Op tend to have crowds, limited supplies, 
+          and long waiting lines and we will not be asking volunteers to go there.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="en-text">
+          Need help covering groceries? Please note that in your request form. We will fulfill grocery requests 
+          as they come in. If we do not have funds to cover your needs immediately, we will let you know, and will 
+          also work to get you in-contact with other funds/service providers who can help.
+        </p>
+        <p class="es-text">
+          Need help covering groceries? Please note that in your request form. We will fulfill grocery requests 
+          as they come in. If we do not have funds to cover your needs immediately, we will let you know, and will 
+          also work to get you in-contact with other funds/service providers who can help.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <h4>
+          <strong class="en-text">general mutual aid resources</strong>
+          <strong class="es-text">general mutual aid resources</strong>
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="block-text-accent">
+          <a class="resource-anchor" target="_blank" rel="noopener" href="https://itsgoingdown.org/what-can-we-do-a-mutual-aid-explainer/">
+            <span class="en-text">mutual aid explainer</span>
+            <span class="es-text">mutual aid explainer</span>
+          </a>
+          <br/>
+          <a class="resource-anchor" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1rIdpKgXeBHbmM3KpB5NfjEBue8YN1MbXhQ7zTOLmSyo/edit?usp=sharing">
+            <span class="en-text">mutual aid & preparation through a disability lens</span>
+            <span class="es-text">mutual aid & preparation through a disability lens</span>
+          </a>
+          <br/>
+          <a class="resource-anchor" target="_blank" rel="noopener" href="http://bigdoorbrigade.com/mutual-aid-toolbox/?fbclid=IwAR1D_mlK-3SEjLWn1KoJF65_bn-3o_Pa8UEhiLPeujnIbzoZ761x2oXkqew">
+            <span class="en-text">mutual aid toolbox</span>
+            <span class="es-text">mutual aid toolbox</span>
+          </a>
+          <br/>
+          <a class="resource-anchor" target="_blank" rel="noopener" href="https://www.anarchistagency.com/commentary/five-ways-you-can-engage-in-mutual-aid-now/?fbclid=IwAR2KXOi5xJ3hpYPWfyEiXlTRQu7ofY0OcJJofBmQrvPxTDDQrfYKD_oKzz4">
+            <span class="en-text">five ways to engage in mutual aid</span>
+            <span class="es-text">five ways to engage in mutual aid</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="row" style="margin-top: 4%">
+      <div class="twelve columns main-text">
         <p>
-          <small>
+          <small class="en-text">
+            Please contact Katie Walsh/Whitney Hu for follow-up questions: kpswalsh@gmail.com and whitneyhu@gmail.com
+          </small>
+          <small class="es-text">
             Please contact Katie Walsh/Whitney Hu for follow-up questions: kpswalsh@gmail.com and whitneyhu@gmail.com
           </small>
         </p>
       </div>
     </div>
-  </div>
+  </footer>
+  <script type="text/javascript">
+    let isEnglish = true;
+    esElements = document.getElementsByClassName('es-text')
+    for(let i = 0; i < esElements.length; i++) {
+      esElements[i].style.display = 'none';
+    }
+    const languageToggle = () => {
+      console.log('blabhalsjl;ks;')
+      console.log(isEnglish)
+      isEnglish = !isEnglish
+      const classNameToHide= isEnglish ? 'es-text' : 'en-text'
+      const classNameToShow= isEnglish ? 'en-text' : 'es-text'
+      const elementsToHide = document.getElementsByClassName(classNameToHide)
+      const elementsToShow = document.getElementsByClassName(classNameToShow)
+      console.log(elementsToHide.length)
+      console.log(elementsToShow.length)
+      for(let i = 0; i < elementsToHide.length; i++) {
+        elementsToHide[i].style.display = 'none';
+      }
+      for(let i = 0; i < elementsToShow.length; i++) {
+        elementsToShow[i].style.display = '';
+      }
+    }
+  </script>
 </body>
 </html>

@@ -12,7 +12,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     min-width: 25rem;
-    max-width: 35rem;
+    max-width: 45rem;
 }
 
 .block-text-accent {
@@ -22,6 +22,15 @@ img {
 }
 
 .main-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.main-heading {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 2rem;
 }

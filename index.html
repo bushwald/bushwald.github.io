@@ -227,21 +227,21 @@
     </div>
   </footer>
   <script type="text/javascript">
-    let isEnglish = true;
+    var isEnglish = true;
     esElements = document.getElementsByClassName('es-text')
-    for(let i = 0; i < esElements.length; i++) {
+    for(var i = 0; i < esElements.length; i++) {
       esElements[i].style.display = 'none';
     }
-    const languageToggle = () => {
+    var languageToggle = function() {
       isEnglish = !isEnglish
-      const classNameToHide= isEnglish ? 'es-text' : 'en-text'
-      const classNameToShow= isEnglish ? 'en-text' : 'es-text'
-      const elementsToHide = document.getElementsByClassName(classNameToHide)
-      const elementsToShow = document.getElementsByClassName(classNameToShow)
-      for(let i = 0; i < elementsToHide.length; i++) {
+      var classNameToHide= isEnglish ? 'es-text' : 'en-text'
+      var classNameToShow= isEnglish ? 'en-text' : 'es-text'
+      var elementsToHide = document.getElementsByClassName(classNameToHide)
+      var elementsToShow = document.getElementsByClassName(classNameToShow)
+      for(var i = 0; i < elementsToHide.length; i++) {
         elementsToHide[i].style.display = 'none';
       }
-      for(let i = 0; i < elementsToShow.length; i++) {
+      for(var i = 0; i < elementsToShow.length; i++) {
         elementsToShow[i].style.display = '';
       }
     }

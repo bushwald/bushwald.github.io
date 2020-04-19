@@ -1,3 +1,4 @@
+
 img {
     display: block;
     margin-left: auto;
@@ -60,10 +61,9 @@ a.button.language {
     z-index: 1;
 }
 
-/* a.button {
-    color: white !important;
-    background-color: rgb(205, 38, 83);
-} */
+a.button {
+    font-size: 16px !important;
+}
 
 @media (max-width: 475px) {
     h4 {

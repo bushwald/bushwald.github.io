@@ -11,20 +11,9 @@ li {
     margin-bottom: 1rem;
 }
 
-/* .btn {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 25rem;
-    max-width: 43rem;
-    width: auto;
-} */
-
 .block-text-accent {
     background-color: #f2f2f3; 
     padding: 2rem;
-    /* z-index: 100000; */
 }
 
 .main-text {
@@ -55,8 +44,7 @@ a.button.language {
     position: fixed; 
     right: 0;
     margin-right: 15px;
-    bottom: 5px;
-    opacity: .60;
+    opacity: .70;
     padding-left: .5rem !important;
     padding-right: 3.5rem !important;
     text-align: left !important;
@@ -77,18 +65,22 @@ a.button {
     width: auto;
 }
 
+a.button.action {
+    margin-top: 2%;
+}
+
 @media (max-width: 475px) {
     h4 {
         text-align: center;
     }
-    .btn {
+    a.button.action {
         margin-top: 5%;
     }
-    .btn-spacer {
-        display: none;
-    }
-    a.button span.es-text {
+    a.button.action span.es-text {
         font-size: 13px !important;
+    }
+    a.button.language {
+        bottom: 5px;
     }
 }
 @media (min-width: 475px) {
@@ -98,5 +90,8 @@ a.button {
     .main-text {
         padding-left: 20%;
         padding-right: 20%;
+    }
+    a.button.language {
+        top: 10px;
     }
 }

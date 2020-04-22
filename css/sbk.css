@@ -76,7 +76,7 @@ a.button.action {
     a.button.action {
         margin-top: 5%;
     }
-    a.button.action span.es-text {
+    a.button.action span#voluntario {
         font-size: 13px !important;
     }
     a.button.language {

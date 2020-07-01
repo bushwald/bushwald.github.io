@@ -184,7 +184,7 @@
     </div>
     <div class="row">
       <div class="twelve columns">
-        <a class="button action" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSe9w6XOcoscWJsLTWdh569CB2Obzc-6k-5ZoFkgzw88pLNC-A/viewform">
+        <a class="button action" href="request.html">  <!-- https://docs.google.com/forms/d/e/1FAIpQLSe9w6XOcoscWJsLTWdh569CB2Obzc-6k-5ZoFkgzw88pLNC-A/viewform-->
           <span class="en-text">request assistance</span>
           <span class="es-text">pide apoyo</span>
         </a>
@@ -250,7 +250,7 @@
           <small class="en-text">
             For follow-up questions, please contact: southbkmutualaid@gmail.com
           </small>
-          <small class="es-text">
+          <small class="es-text" style="text-align: center;">
             Contacta southbkmutualaid@gmail.com con preguntas
           </small>
         </p>
@@ -258,13 +258,15 @@
     </div>
   </footer>
   <script type="text/javascript">
-    var isEnglish = true;
+    console.log(localStorage.getItem("isEnglish"))
+    console.log(localStorage.getItem("isEnglish") === "true")
+    var isEnglish = localStorage.getItem("isEnglish") === "true" ? true : false;
     esElements = document.getElementsByClassName('es-text')
-    for(var i = 0; i < esElements.length; i++) {
-      esElements[i].style.display = 'none';
-    }
-    var languageToggle = function() {
-      isEnglish = !isEnglish
+    // for(var i = 0; i < esElements.length; i++) {
+    //   esElements[i].style.display = 'none';
+    // }
+    var setLanguageDisplay = function() {
+        console.log('blah')
       var classNameToHide= isEnglish ? 'es-text' : 'en-text'
       var classNameToShow= isEnglish ? 'en-text' : 'es-text'
       var elementsToHide = document.getElementsByClassName(classNameToHide)
@@ -275,6 +277,13 @@
       for(var i = 0; i < elementsToShow.length; i++) {
         elementsToShow[i].style.display = '';
       }
+    }
+    setLanguageDisplay()
+
+    var languageToggle = function() {
+      isEnglish = !isEnglish
+      localStorage.setItem("isEnglish", isEnglish)
+      setLanguageDisplay()
     }
   </script>
 </body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>South BK Community Mutual Aid</title>
+  <meta name="description" content="Get to know your South Brooklyn neighbors and support one another">
+  <meta name="author" content="a volunteer">
+
+  <meta property="og:title" content="South Brooklyn Community Mutual Aid">
+  <meta property="og:description" content="Get to know your South Brooklyn neighbors and support one another">
+  <meta property="og:image" content="https://southbkmutualaid.com/help.png">
+  <meta property="og:url" content="https://southbkmutualaid.com/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/twemoji-amazing.css">
+  <link rel="stylesheet" href="css/sbk.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <a class="button language" id="lang-toggle" onClick="languageToggle();">
+    <span class="en-text">es <i class="twa twa-flag-mexico"></i></span>
+    <span class="es-text">en <i class="twa twa-flag-united-states"></i></span>
+  </a>
+  <header class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; margin-top: 3%;">
+        <h4>
+          <strong class="en-text">South Brooklyn Community Mutual Aid</strong>
+          <strong class="es-text">Ayuda Mutua de Brooklyn del Sur</strong>
+        </h4>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="twelve columns main-text">
+        <p class="block-text-accent en-text" style="margin-top: 5%;">
+          This group is based upon "mutual aid." Mutual aid is a voluntary reciprocal exchange of resources and services for mutual benefit.
+        </p>
+        <p class="block-text-accent es-text" style="margin-top: 5%;">
+          Este grupo tiene base en "ayuda mutua." Ayuda mutua es un intercambio volunario y recíproco de recursos y servicios para el beneficio de todos.
+        </p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+        <div class="twelve columns">
+          <iframe class="en-text airtable-embed" src="https://airtable.com/embed/shrh3EPoanZ6sVsjf?backgroundColor=green&prefill_Request+Status=Open" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          <iframe class="es-text airtable-embed" src="https://airtable.com/embed/shrB5g1lPzCFXfvsY?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="row" style="margin-top: 3%">
+      <div class="twelve columns main-text" style="text-align: center;">
+        <p>
+          <small class="en-text">
+            For follow-up questions, please contact: southbkmutualaid@gmail.com
+          </small>
+          <small class="es-text">
+            Contacta southbkmutualaid@gmail.com con preguntas
+          </small>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    console.log(localStorage.getItem("isEnglish"))
+    console.log(localStorage.getItem("isEnglish") === "true")
+    var isEnglish = localStorage.getItem("isEnglish") === "true" ? true : false;
+    esElements = document.getElementsByClassName('es-text')
+    // for(var i = 0; i < esElements.length; i++) {
+    //   esElements[i].style.display = 'none';
+    // }
+    var setLanguageDisplay = function() {
+        console.log('blah')
+      var classNameToHide= isEnglish ? 'es-text' : 'en-text'
+      var classNameToShow= isEnglish ? 'en-text' : 'es-text'
+      var elementsToHide = document.getElementsByClassName(classNameToHide)
+      var elementsToShow = document.getElementsByClassName(classNameToShow)
+      for(var i = 0; i < elementsToHide.length; i++) {
+        elementsToHide[i].style.display = 'none';
+      }
+      for(var i = 0; i < elementsToShow.length; i++) {
+        elementsToShow[i].style.display = '';
+      }
+    }
+    setLanguageDisplay()
+
+    var languageToggle = function() {
+      isEnglish = !isEnglish
+      localStorage.setItem("isEnglish", isEnglish)
+      setLanguageDisplay()
+    }
+  </script>
+</body>
+</html>

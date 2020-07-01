@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>South BK Community Mutual Aid</title>
+  <title>South Brooklyn Mutual Aid</title>
   <meta name="description" content="Get to know your South Brooklyn neighbors and support one another">
   <meta name="author" content="a volunteer">
 
-  <meta property="og:title" content="South Brooklyn Community Mutual Aid">
+  <meta property="og:title" content="South Brooklyn Mutual Aid">
   <meta property="og:description" content="Get to know your South Brooklyn neighbors and support one another">
   <meta property="og:image" content="https://southbkmutualaid.com/help.png">
   <meta property="og:url" content="https://southbkmutualaid.com/">
@@ -32,7 +32,7 @@
     <div class="row">
       <div class="twelve columns" style="text-align: center; margin-top: 3%;">
         <h4>
-          <strong class="en-text">South Brooklyn Community Mutual Aid</strong>
+          <strong class="en-text">South Brooklyn Mutual Aid</strong>
           <strong class="es-text">Ayuda Mutua de Brooklyn del Sur</strong>
         </h4>
       </div>
@@ -258,8 +258,24 @@
     </div>
   </footer>
   <script type="text/javascript">
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
     var isEnglish = true;
-    esElements = document.getElementsByClassName('es-text')
+    var lang = getParameterByName('lang')
+    console.log(lang)
+    if (lang && lang === 'es') {
+      isEnglish = false;
+    }
+    
+    esElements = document.getElementsByClassName(isEnglish ? 'es-text' : 'en-text')
     for(var i = 0; i < esElements.length; i++) {
       esElements[i].style.display = 'none';
     }

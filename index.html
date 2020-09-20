@@ -38,9 +38,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="twelve columns">
-        <img id="help" src="help.png" 
-          alt="a person throwing a lifeline to people who are struggling to stay above water. caption: 'We the people must help each other!'"/>
+      <div class="eight columns offset-by-two">
+        <img id="help" class="u-full-width" src="images/SBKMA-hero.jpg" 
+          alt="logo de Ayuda Mutua Sur de Brooklyn / South Brooklyn Mutual Aid logo"
+        />
       </div>
     </div>
   </header>
@@ -233,37 +234,45 @@
     <div class="row">
       <div class="twelve columns main-text">
         <ul class="block-text-accent">
-          <li>
+          <li class="plain-list">
+            <a class="resource-anchor en-text" href="community-market.html">
+              <span>community market</span>
+            </a>
+            <a class="resource-anchor es-text" href="community-market.html?lang=es">  
+              <span>mercado comunitario</span>
+            </a>
+          </li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://mutualaid.nyc/resources-groups/">
               <span class="en-text">resource guide</span>
               <span class="es-text">guía de recursos</span>
             </a>
           </li>
-          <li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://itsgoingdown.org/what-can-we-do-a-mutual-aid-explainer/">
               <span class="en-text">mutual aid explainer</span>
               <span class="es-text">explicación de ayuda mutua</span>
             </a>
           </li>
-          <li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1rIdpKgXeBHbmM3KpB5NfjEBue8YN1MbXhQ7zTOLmSyo/edit?usp=sharing">
               <span class="en-text">mutual aid & preparation through a disability lens</span>
               <span class="es-text">ayuda mutua & preparación y las discapacidades</span>
             </a>
           </li>
-          <li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="http://bigdoorbrigade.com/mutual-aid-toolbox/?fbclid=IwAR1D_mlK-3SEjLWn1KoJF65_bn-3o_Pa8UEhiLPeujnIbzoZ761x2oXkqew">
               <span class="en-text">mutual aid toolbox</span>
               <span class="es-text">herramientos para ayuda mutua</span>
             </a>
           </li>
-          <li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://www.anarchistagency.com/commentary/five-ways-you-can-engage-in-mutual-aid-now/?fbclid=IwAR2KXOi5xJ3hpYPWfyEiXlTRQu7ofY0OcJJofBmQrvPxTDDQrfYKD_oKzz4">
               <span class="en-text">five ways to engage in mutual aid</span>
               <span class="es-text">cinco modos de participar en ayuda mutua</span>
             </a>
           </li>
-          <li>
+          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1RduJEBqZFa9jXgDZskga06cH52mDR87yoNdXIajLOsU/edit#gid=433515421">
               <span class="en-text">other Brooklyn volunteer opportunities</span>
               <span class="es-text">otras oportunidades para ser voluntari@ en Brooklyn</span>
@@ -274,6 +283,11 @@
     </div>
   </main>
   <footer class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two">
+        <hr/>
+      </div>
+    </div>
     <div class="row">
       <div class="twelve columns main-text" style="text-align: center;">
         <p>
@@ -299,41 +313,6 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript">
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, '\\$&');
-      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    var isEnglish = true;
-    var lang = getParameterByName('lang')
-    console.log(lang)
-    if (lang && lang === 'es') {
-      isEnglish = false;
-    }
-    
-    esElements = document.getElementsByClassName(isEnglish ? 'es-text' : 'en-text')
-    for(var i = 0; i < esElements.length; i++) {
-      esElements[i].style.display = 'none';
-    }
-    var languageToggle = function() {
-      isEnglish = !isEnglish
-      var classNameToHide= isEnglish ? 'es-text' : 'en-text'
-      var classNameToShow= isEnglish ? 'en-text' : 'es-text'
-      var elementsToHide = document.getElementsByClassName(classNameToHide)
-      var elementsToShow = document.getElementsByClassName(classNameToShow)
-      for(var i = 0; i < elementsToHide.length; i++) {
-        elementsToHide[i].style.display = 'none';
-      }
-      for(var i = 0; i < elementsToShow.length; i++) {
-        elementsToShow[i].style.display = '';
-      }
-    }
-  </script>
+  <script src="js/translation.js"></script>
 </body>
 </html>

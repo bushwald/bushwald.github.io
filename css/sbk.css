@@ -6,7 +6,7 @@ img {
     min-width: 250px;
 }
 
-li {
+.plain-list {
     list-style-type: none;
     margin-bottom: 1rem;
 }
@@ -67,6 +67,14 @@ a.button {
 
 a.button.action {
     margin-top: 2%;
+}
+
+a.header-title {
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 3.0rem !important; 
+    line-height: 1.35; 
+    letter-spacing: -.08rem; 
 }
 
 @media (max-width: 475px) {

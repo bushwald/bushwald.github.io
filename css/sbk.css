@@ -95,10 +95,10 @@ a.header-title {
 .fa-instagram {
     background: #f40083;
     color: white !important;
-    line-height: 12px;
+    line-height: 10px;
 }
-.fa-instagram::before {
-    margin-left:-2.5px !important;
+.fa-instagram::before,.fa-facebook::before {
+    margin-left:-2.75px !important;
 }
 
 @media (max-width: 475px) {

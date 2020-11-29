@@ -3,6 +3,7 @@
   var hamburger = {
     navToggle: document.querySelector('.nav-toggle'),
     nav: document.querySelector('nav'),
+    main: document.querySelector('main'),
 
     doToggle: function(e) {
       e.preventDefault();
@@ -12,6 +13,6 @@
   };
 
   hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  // hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  hamburger.main.addEventListener('click', function(e) { hamburger.doToggle(e); });
 
 }());

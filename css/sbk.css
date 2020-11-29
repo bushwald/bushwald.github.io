@@ -77,6 +77,22 @@ a.header-title {
     letter-spacing: -.08rem; 
 }
 
+.fa {
+    padding: 10px;
+    font-size: 5px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white !important;
+    line-height: 12px;
+}
+
 @media (max-width: 475px) {
     h4 {
         text-align: center;
@@ -89,6 +105,9 @@ a.header-title {
     }
     a.button.language {
         bottom: 5px;
+    }
+    .header-title {
+        margin-left: 3rem;
     }
 }
 @media (min-width: 475px) {

@@ -14,11 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/twemoji-amazing.css">
   <link rel="stylesheet" href="css/sbk.css">
+  <link rel="stylesheet" href="css/hamburger.css">
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -29,11 +31,59 @@
     <span class="es-text">en <i class="twa twa-flag-united-states"></i></span>
   </a>
   <header class="container">
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="en-text">HOME</span>
+            <span class="es-text">PÁGINA PRINCIPAL</span>
+          </a>
+        </li>
+        <li>
+          <a class="en-text" href="community-market.html">
+            <span class="en-text">COMMUNITY MARKET</span>
+          </a>
+          <a class="es-text" href="community-market.html?lang=es">  
+            <span class="es-text">MERCADO COMUNITARIO</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://ioby.org/project/south-brooklyn-mutual-aid">
+            <span class="en-text">DONATE</span>
+            <span class="es-text">DONA</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSe9w6XOcoscWJsLTWdh569CB2Obzc-6k-5ZoFkgzw88pLNC-A/viewform">
+            <span class="en-text">REQUEST ASSISTANCE</span>
+            <span class="es-text">PIDE APOYO</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSev6-x2WLbeRPXKZ4bT-QXZ5vTcLBaGFGbZqxzygov1pcs0cQ/viewform">
+            <span class="en-text">VOLUNTEER</span>
+            <span class="es-text" id="voluntario">INSCRÍBITE COMO VOLUNTARI@</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://tinyletter.com/southbkmutualaid">
+            <span class="en-text">NEWSLETTER</span>
+            <span class="es-text">BOLETÍN DE NOTICIAS</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://facebook.com/groups/AyudaMutuaBrooklynSur" class="fa fa-facebook"></a>
+        </li>
+      </ul>
+    </nav>
     <div class="row">
       <div class="twelve columns" style="text-align: center; margin-top: 3%;">
         <h4>
-          <strong class="en-text">South Brooklyn Mutual Aid</strong>
-          <strong class="es-text">Ayuda Mutua del Sur de Brooklyn</strong>
+          <strong class="en-text header-title">South Brooklyn Mutual Aid</strong>
+          <strong class="es-text header-title">Ayuda Mutua del Sur de Brooklyn</strong>
         </h4>
       </div>
     </div>
@@ -235,14 +285,6 @@
       <div class="twelve columns main-text">
         <ul class="block-text-accent">
           <li class="plain-list">
-            <a class="resource-anchor en-text" href="community-market.html">
-              <span>community market</span>
-            </a>
-            <a class="resource-anchor es-text" href="community-market.html?lang=es">  
-              <span>mercado comunitario</span>
-            </a>
-          </li>
-          <li class="plain-list">
             <a class="resource-anchor" target="_blank" rel="noopener" href="https://mutualaid.nyc/resources-groups/">
               <span class="en-text">resource guide</span>
               <span class="es-text">guía de recursos</span>
@@ -314,7 +356,7 @@
     </div>
     <div class="row">
       <div class="twelve columns main-text" style="text-align: center;">
-        <p>
+        <p style="margin-bottom: .5rem;">
           <small class="en-text">
             For follow-up questions, please contact: southbkmutualaid@gmail.com
           </small>
@@ -324,7 +366,13 @@
         </p>
       </div>
     </div>
+    <div class="row">
+      <div class="twelve columns" style="text-align: center;">
+        <a target="_blank" rel="noopener" href="https://facebook.com/groups/AyudaMutuaBrooklynSur" class="fa fa-facebook" style="margin-bottom: .5rem;"></a>
+      </div>
+    </div>
   </footer>
   <script src="js/translation.js"></script>
+  <script src="js/hamburger.js"></script>
 </body>
 </html>

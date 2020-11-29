@@ -92,6 +92,14 @@ a.header-title {
     color: white !important;
     line-height: 12px;
 }
+.fa-instagram {
+    background: #f40083;
+    color: white !important;
+    line-height: 12px;
+}
+.fa-instagram::before {
+    margin-left:-2.5px !important;
+}
 
 @media (max-width: 475px) {
     h4 {

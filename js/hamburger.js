@@ -13,7 +13,6 @@
       this.nav.classList.toggle('expanded');
     },
     close: function(e) {
-      e.preventDefault();
       this.navToggle.classList.remove('expanded');
       this.nav.classList.remove('expanded');
     }

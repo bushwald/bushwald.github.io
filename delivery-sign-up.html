@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>South Brooklyn Mutual Aid</title>
+  <meta name="description" content="Get to know your South Brooklyn neighbors and support one another">
+  <meta name="author" content="a volunteer">
+
+  <meta property="og:title" content="South Brooklyn Mutual Aid">
+  <meta property="og:description" content="Get to know your South Brooklyn neighbors and support one another">
+  <meta property="og:image" content="https://southbkmutualaid.com/images/SBKMA-hero.jpg">
+  <meta property="og:url" content="https://southbkmutualaid.com/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/twemoji-amazing.css">
+  <link rel="stylesheet" href="css/sbk.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <a class="button language" id="lang-toggle" onClick="languageToggle();">
+    <span class="en-text">es <i class="twa twa-flag-mexico"></i></span>
+    <span class="es-text">en <i class="twa twa-flag-united-states"></i></span>
+  </a>
+  <div class="nav-toggle">
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li>
+        <a onclick="goToPageWithLang('/')" href="#">
+          <span class="en-text">HOME</span>
+          <span class="es-text">PÁGINA PRINCIPAL</span>
+        </a>
+      </li>
+      <li>
+        <a class="en-text" href="community-market.html">
+          <span class="en-text">COMMUNITY MARKET</span>
+        </a>
+        <a class="es-text" href="community-market.html?lang=es">  
+          <span class="es-text">MERCADO COMUNITARIO</span>
+        </a>
+      </li>
+      <li>
+        <a class="en-text" href="food-guide.html">
+          <span class="en-text">FOOD GUIDE</span>
+        </a>
+        <a class="es-text" href="food-guide.html?lang=es"> 
+          <span class="es-text">GUÍA DE ALIMENTOS</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://ioby.org/project/south-brooklyn-mutual-aid">
+          <span class="en-text">DONATE</span>
+          <span class="es-text">DONA</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="en-text">REQUEST ASSISTANCE</span>
+          <span class="es-text">PIDE APOYO</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSev6-x2WLbeRPXKZ4bT-QXZ5vTcLBaGFGbZqxzygov1pcs0cQ/viewform">
+          <span class="en-text">VOLUNTEER</span>
+          <span class="es-text" id="voluntario">INSCRÍBITE COMO VOLUNTARI@</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://southbkmutualaid.us2.list-manage.com/subscribe?u=65791c917ff822ca7e028bf2d&id=9137dda0e2">
+          <span class="en-text">NEWSLETTER</span>
+          <span class="es-text">BOLETÍN DE NOTICIAS</span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://facebook.com/groups/AyudaMutuaBrooklynSur" class="fa fa-facebook" style="padding-right: 1rem;"></a>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/southbrooklynmutualaid/" class="fa fa-instagram"></a>
+      </li>
+    </ul>
+  </nav>
+  <header class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; margin-top: 3%;">
+        <h4>
+          <strong class="en-text">
+            <a onclick="goToPageWithLang('/')" href="#" class="header-title">South Brooklyn Mutual Aid</a>
+          </strong>
+          <strong class="es-text">
+            <a onclick="goToPageWithLang('/')" href="#" class="header-title">Ayuda Mutua del Sur de Brooklyn</a>
+          </strong>
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns offset-by-two">
+        <a onclick="goToPageWithLang('/')" href="#" >
+          <img id="help" class="u-full-width" src="images/SBKMA-hero.jpg" 
+            alt="logo de Ayuda Mutua Sur de Brooklyn / South Brooklyn Mutual Aid logo"
+          />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; margin-top: 3%">
+        <h4>
+          <strong class="en-text">Saturday Grocery Delivery Sign-up</strong>
+          <strong class="es-text">Registro de Entrega de Comestibles los Sábados</strong>
+        </h4>
+      </div>
+    </div>
+    <br/> 
+    <div class="row">
+      <div class="twelve columns">
+        <iframe class="airtable-embed" id="request-iframe" onload="adjustRequestFrameHeight()" src="https://airtable.com/embed/shrPBrZY8HXAXRpJm?backgroundColor=white" frameborder="0" onmousewheel="" width="100%" height="4200"></iframe>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two">
+        <hr style="margin-bottom: 5px;"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text" style="text-align: center;">
+        <p style="margin-bottom: 5px;">
+          <small class="en-text">
+            South Brooklyn Mutual Aid 2021
+          </small>
+          <small class="es-text">
+            Ayuda Mutua del Sur de Brooklyn 2021
+          </small>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text" style="text-align: center;">
+        <p style="margin-bottom: 5px;">
+          <small class="en-text">
+            <a target="_blank" rel="noopener" href="https://southbkmutualaid.us2.list-manage.com/subscribe?u=65791c917ff822ca7e028bf2d&id=9137dda0e2">Sign up for our newsletter</a>
+          </small>
+          <small class="es-text">
+            <a target="_blank" rel="noopener" href="https://southbkmutualaid.us2.list-manage.com/subscribe?u=65791c917ff822ca7e028bf2d&id=9137dda0e2">Inscríbete en nuestro boletín de noticias</a>
+          </small>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns main-text" style="text-align: center;">
+        <p style="margin-bottom: 2rem;">
+          <small class="en-text">
+            For follow-up questions, please contact: southbkmutualaid@gmail.com
+          </small>
+          <small class="es-text">
+            Contacta southbkmutualaid@gmail.com con preguntas
+          </small>
+        </p>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 2rem;">
+      <div class="twelve columns" style="text-align: center;">
+        <a target="_blank" rel="noopener" href="https://facebook.com/groups/AyudaMutuaBrooklynSur" class="fa fa-facebook" style="padding-right: 1rem;"></a>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/southbrooklynmutualaid/" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/translation.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/request-form-height.js"></script>
+</body>
+</html>

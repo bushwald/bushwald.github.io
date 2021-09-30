@@ -101,6 +101,11 @@ a.header-title {
     margin-left:-2.75px !important;
 }
 
+#request-iframe {
+    background: transparent; 
+    border: 0px;
+}
+
 @media (max-width: 475px) {
     h4 {
         text-align: center;
